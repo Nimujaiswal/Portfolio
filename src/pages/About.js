@@ -43,6 +43,9 @@ export default function About() {
         <div className="about-image">
           <img src="/images/Nimu.png" alt="Nimesh Jaiswal" />
         </div>
+        <div className="behance-skills">
+          <img src="/images/behance.png" alt="Adobe Creative Suite and Figma icons" />
+        </div>
       </div>
     </motion.main>
   );
