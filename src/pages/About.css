@@ -2,6 +2,7 @@
   position: relative;
   min-height: 100vh;
   background: url("../assets/profile.jpg") center/cover no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   align-items: center;
@@ -28,6 +29,7 @@
   position: relative;
   z-index: 2;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .about-text {
@@ -36,7 +38,7 @@
 }
 
 .about-text h1 {
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 5vw, 2.8rem);
   margin-bottom: 20px;
 }
 
@@ -45,7 +47,7 @@
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   margin-bottom: 16px;
   line-height: 1.6;
 }
@@ -54,6 +56,7 @@
   margin-top: 20px;
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .social-links a {
@@ -75,22 +78,93 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .about-image img {
-  max-width: 400px;
+  max-width: 425px;
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+.behance-skills {
+  position: absolute;
+  bottom: -73px;
+  left: 0;
+  width: 111%;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.behance-skills img {
+  width: 1277px;
+  max-width: none;
+  height: auto;
+  opacity: 1;
+  object-fit: cover;
+}
+
+/* Tablet and smaller desktop screens */
+@media (max-width: 1200px) {
   .about-container {
     flex-direction: column;
     text-align: center;
   }
+  .about-text, .about-image {
+    flex: none;
+    width: 100%;
+  }
+  .about-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .behance-skills {
+    position: absolute;
+  bottom: -74px;
+  left: 0;
+  width: 111%;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+
+.behance-skills img {
+  width: 1277px;
+  max-width: none;
+  height: auto;
+  opacity: 1;
+  object-fit: cover;
+
+}
+
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px 15px;
+  }
   .about-text h1 {
     font-size: 2.2rem;
   }
+  .about-image img {
+    max-width: 300px;
+  }
+  /* Hides the behance-skills image on mobile screens */
+  .behance-skills {
+    display: none;
+  }
+  .social-links {
+  margin-left: 30px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+}
 }
