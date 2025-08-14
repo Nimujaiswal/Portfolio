@@ -1,0 +1,122 @@
+.video-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("../assets/profile.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.main-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.video-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Changed from 'cover' to 'contain' */
+  display: block;
+}
+
+.video-description {
+  font-size: 0.95rem;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  line-height: 1.4;
+}
+.instagram-embed {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #000;
+  border: none;
+}
+
+
+/* Modal */
+.video-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.video-modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.video-modal-element {
+  width: auto;
+  height: 80vh;
+  max-width: 95vw;
+  object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 1rem;
+  }
+  .page-title {
+    font-size: 1.6rem;
+  }
+  .video-description {
+    font-size: 0.85rem;
+  }
+}

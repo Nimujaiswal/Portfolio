@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: white;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: rgb(20, 19, 19);
+  color: #fff;
+  z-index: 50;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* This button is hidden on desktop */
+.menu-toggle {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+  list-style: none; /* In case you use a ul/li later */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #e5f9f7;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: 200ms ease;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background: rgba(20, 184, 166, 0.25);
+}
+
+/* --- Mobile Styles --- */
+/* This media query applies to screens 768px and smaller */
+@media (max-width: 768px) {
+  .site-header {
+    /* Align items differently on mobile */
+    justify-content: space-between;
+  }
+
+  .logo {
+    flex-grow: 1; /* Pushes the hamburger to the end */
+  }
+
+  /* Show the toggle button on mobile */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 100;
+  }
+
+  /* The navigation menu itself */
+  .nav {
+    position: fixed;
+    top: 72px; /* Place it just below the header */
+    right: 0;
+    width: 100%;
+    max-width: 300px; /* A max-width for tablets */
+    height: calc(100vh - 72px); /* Full height below the header */
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    transform: translateX(100%); /* Initially hide the menu off-screen */
+    transition: transform 0.3s ease-out;
+  }
+
+  /* When the 'nav-open' class is added by React, slide the menu in */
+  .nav.nav-open {
+    transform: translateX(0);
+  }
+
+  /* Style links for the mobile menu */
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    background: transparent;
+  }
+}
