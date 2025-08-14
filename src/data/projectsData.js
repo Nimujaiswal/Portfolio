@@ -36,7 +36,7 @@ export const projects = [
     title: "Product Web",
     description: "A responsive web page showcasing various products. Just initial days of exploration ",
     tags: ["HTML", "CSS", "JavaScript"],
-    link: "https://project-61irp7eyo-nimesh-jaiswals-projects-18632153.vercel.app/",
+    link: "https://project-ten-drab-84.vercel.app/",
     
   },
   
