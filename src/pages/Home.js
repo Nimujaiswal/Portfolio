@@ -47,7 +47,7 @@ export default function Home() {
                 WEB TECH ENTHUSIAST <br></br>
                 TURNS IDEA INTO REALITY <br></br>
                 KEEN ON FRONT-END INNOVATIONS <br></br>
-                LOVES BUILDING DIGITAL EXPREIENCES
+                LOVES BUILDING DIGITAL EXPERIENCE 
               </p>
 
               {/* Tabs: UI/UX vs Graphic */}
