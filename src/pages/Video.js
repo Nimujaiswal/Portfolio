@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./Video.css";
 
 const videoList = [
-  { src: "/images/motion.mp4", description: "Motion video" },
-  { src: "/images/next.mp4", description: "School Management App Video." },
-  { src: "/images/logo.mp4", description: "Logo animation." },
+  { src: "/images/motion.mp4", description: "Motion Animation" },
+  { src: "/images/next.mp4", description: "School Management App Video" },
+  { src: "/images/logo.mp4", description: "Logo Animation" },
   { src: "/images/DONE.mp4", description: "Banner Outro" },
-  { src: "/images/Intro.mp4", description: "Adverting Video" },
+  { src: "/images/Intro.mp4", description: "Digital Advertising" },
   { src: "/images/TSL.mp4", description: "Cricket Club" },
-  { src: "/images/Motion 2.mp4", description: "Interaction Video" },
+  { src: "/images/Motion 2.mp4", description: "Interactive Story Experience" },
   { src: "/images/sf.mp4", description: "Short Film" },  
 ];
 
