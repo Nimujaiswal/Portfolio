@@ -79,6 +79,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: -1;
 }
 
 .about-image img {
@@ -90,43 +91,7 @@
 
 .behance-skills {
   position: absolute;
-  bottom: -73px;
-  left: 0;
-  width: 111%;
-  z-index: -1;
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.behance-skills img {
-  width: 1277px;
-  max-width: none;
-  height: auto;
-  opacity: 1;
-  object-fit: cover;
-}
-
-/* Tablet and smaller desktop screens */
-@media (max-width: 1200px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-text,
-  .about-image {
-    flex: none;
-    width: 100%;
-  }
-  .about-image {
-    order: -1;
-    margin-bottom: 20px;
-  }
-}
-
-.behance-skills {
-  position: absolute;
-  bottom: -74px;
+  bottom: -65px;
   left: 0;
   width: 111%;
   z-index: 0;
@@ -143,28 +108,92 @@
   object-fit: cover;
 }
 
-/* Mobile screens */
+/* Tablet and smaller desktop screens */
+@media (max-width: 1200px)  
+{
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    order: -1; /* make sure text comes first */
+    width: 100%;
+  }
+
+  .about-image {
+    order: 0;  /* image comes after text */
+    margin-bottom: 20px;
+  }
+  .behance-skills {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 111%;
+  z-index: -1;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  padding-left: 432px;
+  flex-wrap: wrap;
+}
+
+.behance-skills img {
+  width: 1277px;
+  max-width: none;
+  height: auto;
+  opacity: 1;
+  object-fit: cover;
+}
+}
+
 @media (max-width: 768px) {
   .about-section {
     padding: 30px 15px;
   }
+
+  .about-text {
+    margin-top: 40px;
+    order: -1; /* text always first */
+  }
+
   .about-text h1 {
     font-size: 2.2rem;
   }
+
+  .about-image {
+    order: 0; /* image after text */
+    margin-top: -50px;
+  }
+
   .about-image img {
     max-width: 300px;
   }
-  /* Hides the behance-skills image on mobile screens */
   .behance-skills {
-    display: none;
-  }
-  .about-image {
-    flex: 1;
+    position: absolute;
+    bottom: 59px;
+    left: 0;
+    width: 111%;
+    z-index: -1;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 30px;
+    justify-content: flex-end;
   }
+
+  .behance-skills img {
+    width: 427px;
+    max-width: none;
+    height: auto;
+    opacity: 1;
+    object-fit: cover;
+  }
+
   .social-links {
     margin-left: 30px;
     display: flex;
