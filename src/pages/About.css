@@ -179,7 +179,7 @@
     position: absolute;
     bottom: 59px;
     left: 0;
-    width: 111%;
+    width: 118%;
     z-index: -1;
     overflow: hidden;
     display: flex;
@@ -195,9 +195,9 @@
   }
 
   .social-links {
-    margin-left: 30px;
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    padding-left: 29px;
   }
 }
