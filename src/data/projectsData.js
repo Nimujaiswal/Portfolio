@@ -13,7 +13,7 @@ export const projects = [
   title: "GoQuant Trading",
   description: "An intuitive trading dashboard concept for GoQuant. Includes data visualization, market insights, and interactive chart elements for a streamlined user experience.",
   tags: [],
-  link: "https://www.figma.com/design/HC0pMPcoh3obvNP64YOYWy/GoQuant?m=auto&t=7k9Gi1ubg8NGHbNe-6",
+  link: "https://www.figma.com/proto/HC0pMPcoh3obvNP64YOYWy/GoQuant?node-id=1-2&starting-point-node-id=1%3A3&t=XqQCDYsBvrBSCYf9-1",
   image: "/images/FB.png", // Add an image for visual appeal
   
 },
