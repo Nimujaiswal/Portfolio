@@ -65,9 +65,17 @@ export default function Home() {
                   onClick={() => setMode("uiux")}
                 >
                   {/* icon */}
-                  <svg className="tab__icon" viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12h16M12 4v16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
+                   <svg className="tab__icon" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="3" width="7" height="7" 
+        stroke="currentColor" strokeWidth="2"/>
+  <rect x="14" y="3" width="7" height="7" 
+        stroke="currentColor" strokeWidth="2"/>
+  <rect x="3" y="14" width="7" height="7" 
+        stroke="currentColor" strokeWidth="2"/>
+  <rect x="14" y="14" width="7" height="7" 
+        stroke="currentColor" strokeWidth="2"/>
+</svg>
                   UI/UX
                 </button>
 
@@ -79,10 +87,16 @@ export default function Home() {
                   className={`tab ${mode === "graphic" ? "is-active" : ""}`}
                   onClick={() => setMode("graphic")}
                 >
-                  <svg className="tab__icon" viewBox="0 0 24 24" fill="none">
-                    <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" />
-                    <path d="M9 16l6-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
+                 <svg className="tab__icon" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 1l5 12-5 5-5-5 5-12Z" 
+        stroke="currentColor" strokeWidth="2" 
+        fill="none"/>
+  <circle cx="12" cy="17" r="2.5" 
+        stroke="currentColor" strokeWidth="2"/>
+</svg>
+
+
                   Graphic
                 </button>
               </div>
