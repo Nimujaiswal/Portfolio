@@ -8,7 +8,7 @@ const videoList = [
   { src: "/images/DONE.mp4", description: "Banner Outro" },
   { src: "/images/Intro.mp4", description: "Digital Advertising" },
   { src: "/images/TSL.mp4", description: "Cricket Club" },
-  { src: "/images/Motion 2.mp4", description: "Interactive Story Experience" },
+  { src: "/images/Viral_reel.mp4", description: "Interactive Short Content" },
   { src: "/images/sf.mp4", description: "Short Film" },  
 ];
 
