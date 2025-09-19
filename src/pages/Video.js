@@ -7,7 +7,7 @@ const videoList = [
   { src: "/images/logo.mp4", description: "Logo Animation" },  
   { src: "/images/Intro.mp4", description: "Digital Advertising" },
   { src: "/images/TSL.mp4", description: "Cricket Club" },
-  { src: "/images/Final.mp4", description: "Cricket Club" },
+  { src: "/images/Final.mp4", description: "Short Ad for App" },
   { src: "/images/Viral_Reel.mp4", description: "Interactive Short Content" },
   { src: "/images/sf.mp4", description: "Short Film" },
   { src: "/images/Motion 2.mp4", description: "Name Play" },
