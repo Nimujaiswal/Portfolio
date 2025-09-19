@@ -4,12 +4,15 @@ import "./Video.css";
 const videoList = [
   { src: "/images/motion.mp4", description: "Motion Animation" },
   { src: "/images/next.mp4", description: "School Management App Video" },
-  { src: "/images/logo.mp4", description: "Logo Animation" },
-  { src: "/images/DONE.mp4", description: "Banner Outro" },
+  { src: "/images/logo.mp4", description: "Logo Animation" },  
   { src: "/images/Intro.mp4", description: "Digital Advertising" },
   { src: "/images/TSL.mp4", description: "Cricket Club" },
+  { src: "/images/Final.mp4", description: "Cricket Club" },
   { src: "/images/Viral_Reel.mp4", description: "Interactive Short Content" },
-  { src: "/images/sf.mp4", description: "Short Film" },  
+  { src: "/images/sf.mp4", description: "Short Film" },
+  { src: "/images/Motion 2.mp4", description: "Name Play" },
+  { src: "/images/Task 3.gif", description: "Loader" },
+  { src: "/images/DONE.mp4", description: "Banner Outro" },
 ];
 
 export default function VideoGallery() {
