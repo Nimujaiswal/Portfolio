@@ -33,6 +33,12 @@ export const projects = [
     
   },
   {
+  title: "BIPL – Broadcast Imaging Camera Provider",
+  description: " Broadcast Imaging Pvt. Ltd., offering professional broadcast and production solutions including cameras, lenses, multi-cam setups, and media services.",
+  tags: ["Broadcast", "Production", "Media", "Video Solutions", "Corporate"],
+  link: "https://bipl.vercel.app/",
+ },
+  {
     title: "Product Web",
     description: "A responsive web page showcasing various products. Just initial days of exploration ",
     tags: ["HTML", "CSS", "JavaScript"],
