@@ -106,14 +106,16 @@ export default function Home() {
                 <a href="/about" className="btn btn--ghost">
                   Hire Me <span className="arrow">→</span>
                 </a>
-               <a
-               //    href="https://drive.google.com/file/d/1j1iqe8pWLtcUOlHCwL3HaahgsUSpVPIs/view?usp=sharing"
-               //    className="btn btn--link"
-               //    target="_blank"
-               //    rel="noopener noreferrer"
-               //  >
-               //    Download Resume
-               // </a>
+              {/* <a
+                  href="https://drive.google.com/file/d/1j1iqe8pWLtcUOlHCwL3HaahgsUSpVPIs/view?usp=sharing"
+                  className="btn btn--link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download Resume
+               
+                </a>
+                */}
               </div>
             </motion.div>
           </div>
