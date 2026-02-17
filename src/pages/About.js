@@ -29,7 +29,7 @@ export default function About() {
           </p>
 
           <div className="social-links">
-            <a href="https://bento.me/nimeshjaiswal" target="_blank" rel="noreferrer">Bento</a>
+            <a href="https://own.page/nimesh" target="_blank" rel="noreferrer">Profile</a>
             <a href="https://www.behance.net/nimeshjaiswal" target="_blank" rel="noreferrer">Behance</a>
             <a href="https://www.linkedin.com/in/nimesh-jaiswal/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
