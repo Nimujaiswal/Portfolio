@@ -11,7 +11,7 @@ const videoList = [
   { src: "/images/Viral_Reel.mp4", description: "Interactive Short Content" },
   { src: "/images/sf.mp4", description: "Short Film" },
   { src: "/images/Motion 2.mp4", description: "Name Play" },
-  { src: "/images/123.mp4", description: "Loader" },
+  { src: "/images/Anime Swiggy.mp4", description: "Ai Swiggy Anime" },
   { src: "/images/DONE.mp4", description: "Banner Outro" },
 ];
 
