@@ -33,6 +33,14 @@ export const projects = [
     
   },
   {
+
+  title: "Memsaab India",
+  description: "An online fashion store specializing in traditional Indian ethnic wear, including bridal lehengas, sarees, and suits.",
+  tags: ["E-commerce", "Fashion", "Traditional Wear"],
+  link: "https://www.memsaabindia.in/",
+
+},
+  {
   title: "Broadcast Camera Provider",
   description: " Broadcast Imaging Pvt. Ltd., offering cameras, lenses, multi-cam setups, and media services.",
   tags: ["HTML", "CSS", "React.js", "Node.js"],
