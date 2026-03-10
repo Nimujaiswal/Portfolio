@@ -35,7 +35,7 @@ export const projects = [
   {
 
   title: "Memsaab India",
-  description: "An online fashion store specializing in traditional Indian ethnic wear, including bridal lehengas, sarees, and suits.",
+  description: "An online fashion store specializing in traditional Indian ethnic wear and suits.",
   tags: ["E-commerce", "Fashion", "Traditional Wear"],
   link: "https://www.memsaabindia.in/",
 
