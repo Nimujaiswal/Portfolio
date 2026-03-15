@@ -47,6 +47,12 @@ export const projects = [
   link: "https://bipl.vercel.app/",
  },
   {
+  title: "Asset Optimizer",
+  description: "A web-based tool that compresses and optimizes images, videos, and files to reduce size and improve performance.",
+  tags: ["Web Tool", "Optimization", "File Compression"],
+  link: "https://assetoptimizer.netlify.app/",
+},
+  {
     title: "Product Web",
     description: "A responsive web page showcasing various products. Just initial days of exploration ",
     tags: ["HTML", "CSS", "JavaScript"],
