@@ -34,6 +34,9 @@ export default function Header() {
         <NavLink to="/video" className="nav-link" onClick={() => setIsMenuOpen(false)}>
           Video
         </NavLink>
+             <NavLink to="/motion" className="nav-link" onClick={() => setIsMenuOpen(false)}>
+          Motion
+        </NavLink>
         <NavLink to="/projects" className="nav-link" onClick={() => setIsMenuOpen(false)}>
           Projects
         </NavLink>
